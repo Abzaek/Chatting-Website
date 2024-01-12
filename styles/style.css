@@ -1,164 +1,311 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* font-size: 70.5%; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 70.5%;
 }
 
+/* Sidebar styling */
+
+/* 
+##################################################################################
+###################################################################################
+##################################################################################
+*/
+
 .side-bar {
-    padding: 1.3rem 0rem 6.6rem 0rem;
-    width: 23.8rem;
-    height: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    background-color: #353743;
-    flex-shrink: 0;
+  padding: 1.3rem 0rem 6.6rem 0rem;
+  width: 23.8rem;
+  /* height: 100%; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #353743;
+  flex-shrink: 0;
 }
 
 .banner-logo-and-name {
-    margin: 0rem 2.516rem 1.3rem 3.1rem;
-    padding: 1.9rem 0rem 2rem 1.1rem;
-    width: calc(100% - 5.6155rem);
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
+  margin: 0rem 2.516rem 1.3rem 3.1rem;
+  padding: 1.9rem 0rem 2rem 1.1rem;
+  width: calc(100% - 5.6155rem);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .banner-logo {
-    margin: 0rem 2.584rem 0.2rem 0rem;
-    width: 4rem;
-    height: 3.4rem;
-    position: relative;
-    object-fit: contain;
-    vertical-align: top;
-    flex-shrink: 0;
+  margin: 0rem 2.584rem 0.2rem 0rem;
+  width: 4rem;
+  height: 3.4rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
 }
 
 .banner-name {
-    font-size: 3.1068rem;
-    font-weight: 900;
-    line-height: 1.2125;
-    color: #f02857;
-    font-family: Inter, 'Source Sans Pro';
-    white-space: nowrap;
-    flex-shrink: 0;
+  font-size: 3.1068rem;
+  font-weight: 900;
+  line-height: 1.2125;
+  color: #f02857;
+  font-family: Inter, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .dashboard-and-menus {
-    margin-bottom: 27.7rem;
-    width: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
+  margin-bottom: 6.5rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
 }
 
 .dashboard {
-    margin-bottom: 5.7rem;
-    box-sizing: border-box;
-    padding: 1.6rem 7.8rem 1.6rem 3rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-color: #f02857;
-    border-radius: 1rem;
-    flex-shrink: 0;
+  margin-bottom: 5.7rem;
+  box-sizing: border-box;
+  padding: 1.6rem 7.8rem 1.6rem 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #f02857;
+  border-radius: 1rem;
+  flex-shrink: 0;
 }
 
 .dashboard-image {
-    margin-right: 2.4rem;
-    width: 1.8rem;
-    height: 1.8rem;
-    object-fit: contain;
-    vertical-align: top;
-    flex-shrink: 0;
+  margin-right: 2.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
 }
 
 .dashboard-text {
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 0.08rem;
-    color: #ffffff;
-    font-family: Poppins, 'Source Sans Pro';
-    white-space: nowrap;
-    flex-shrink: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.08rem;
+  color: #ffffff;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .menus {
-    padding: 1.7rem 3rem 0rem 3rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
+  padding: 1.7rem 3rem 0rem 3rem;
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
 }
 
-.menus li a {
+.menus li {
     margin-bottom: 3.3rem;
     margin-right: 6rem;
-    width: calc(100% - 6rem);
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
 }
-.menus li a:hover p {
-    border-bottom: 0.82rem solid #f02857;
-    border-radius: 6px;
-    transition: text-decoration 1s ease;
-}
-.menus li a:hover {
-    margin-bottom: 2.5rem;
+.menus li a {
+  width: calc(100% - 6rem);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
+
 .menus li a img {
-    margin-right: 2.4rem;
-    width: 2rem;
-    height: 1.75rem;
-    object-fit: contain;
-    vertical-align: top;
-    flex-shrink: 0;
+  margin-right: 2.4rem;
+  width: 2rem;
+  height: 1.75rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
 }
 
 .menus li a p {
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.08rem;
-    color: #ffffff;
-    font-family: Poppins, 'Source Sans Pro';
-    white-space: nowrap;
-    flex-shrink: 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.08rem;
+  color: #ffffff;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .profile-and-settings {
-    margin-right: 6.3rem;
-    width: 11.5rem;
-    flex-shrink: 0;
+  margin-right: 6.3rem;
+  width: 11.5rem;
+  flex-shrink: 0;
 }
 
-.profile-and-settings li a {
+.profile-and-settings li {
     margin-bottom: 3.3rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
+}
+.profile-and-settings li a {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .profile-and-settings li a img {
-    margin-right: 2.4rem;
-    width: 1.8rem;
-    height: 1.8rem;
-    object-fit: contain;
-    vertical-align: top;
-    flex-shrink: 0;
+  margin-right: 2.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
 }
 
 .profile-and-settings li a p {
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.08rem;
-    color: #ffffff;
-    font-family: Poppins, 'Source Sans Pro';
-    white-space: nowrap;
-    flex-shrink: 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.08rem;
+  color: #ffffff;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
 }
+
+/* hover effect */
+
+
+/* Set initial styles for .rectangle */
+.menus .rectangle, .navigation-bar .rectangle,
+.profile-and-settings .rectangle {
+  width: 0;
+  height: 6px; /* Set your underline height */
+  background-color: #f02857; /* Set your underline color */
+  transition: width 0.3s ease; /* Add a transition for a smooth effect */
+}
+
+/* Expand the underline on hover */
+.menus li:hover .rectangle, .navigation-bar li:hover .rectangle,
+.profile-and-settings li:hover .rectangle {
+  width: 100%;
+}
+
+/* hover effect */
+
+
+/* Navigation bar styling */
+
+/* 
+#############################################################
+#############################################################
+*/
+
+.right-container {
+    flex: 1;
+    position: relative;
+}
+
+.navigation-bar {
+  padding: 2.4rem 5.4rem 2.1rem 11.2rem;
+  height: 9rem;
+  background-color: #272831;
+  display: flex;
+}
+
+.navigation-bar ul {
+  flex: 1;
+  display: flex;
+}
+
+.navigation-bar ul li{
+  position: relative;
+  padding: 0 2.7rem;
+}
+.navigation-links li::after {
+  content: '';
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  height: 60%; /* Vertical line height equal to the child's height */
+  width: 1px; /* Width of the vertical line */
+  background-color: #ada7a7; /* Color of the vertical line */
+}
+.navigation-links li:last-child::after {
+  display: none;
+}
+.navigation-bar ul li a{
+  height: 4.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.navigation-bar img {
+  margin: 0rem 0.4rem 0.52rem 0rem;
+  width: 2.4rem;
+  height: 2.08rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.navigation-bar p {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.75;
+  color: #ffffff;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.search {
+  font-size: 2.4rem;
+  font-weight: 600;
+  width: 10rem;
+  border-radius: 22px;
+  border-width: 0px;
+  outline: none;
+  line-height: 1.75;
+  background-color: #272831;
+  color: #ffffff;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.search::placeholder {
+  color: #ffffff;
+}
+.profile-and-notifications {
+  height: calc(100% - 1.7rem);
+  display: flex;
+  gap: 2rem;
+  flex-shrink: 0;
+}
+.profile-and-notifications div {
+  display: flex;
+}
+.notification-and-theme {
+  display: flex;
+  gap: 1.7rem;
+}
+.profile-and-notifications div p{
+  margin-right: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+
+.profile-photo {
+  margin-right: 1.2rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/ellipse-169-bg.png);
+  border-radius: 1.4rem;
+  flex-shrink: 0;
+}
+
