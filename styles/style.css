@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-size: 70.5%;
 }
+a {
+  text-decoration: none; 
+  color: inherit; 
+}
 
 /* Sidebar styling */
 
@@ -189,6 +193,17 @@
 
 /* hover effect */
 
+/* Right Container start*/
+
+.right-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;  
+}
+
+/* Right Container end */
+
 
 /* Navigation bar styling */
 
@@ -197,10 +212,7 @@
 #############################################################
 */
 
-.right-container {
-    flex: 1;
-    position: relative;
-}
+
 
 .navigation-bar {
   padding: 2.4rem 5.4rem 2.1rem 11.2rem;
@@ -309,3 +321,71 @@
   flex-shrink: 0;
 }
 
+/* Chat Divs */
+.right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.main-div {
+  display: flex;
+  gap: 4rem;
+}
+
+.inbox {
+  flex: 1;
+}
+
+.main-div .inside-main {
+  display: flex;
+  width: 30%;
+  gap: 1rem;
+}
+.inside-main .chat-list {
+  flex: 1;
+}
+/* general layout end */
+
+.sidebar-chat {
+  height: 100%;
+  padding: 15.7rem 0.1rem 3.017rem 0.1rem;
+  background-color: #272831;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 0.7rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+.sidebar-chat li {
+  margin: 0rem 1.8rem 1.4rem 1.7rem;
+  /* width: calc(100% - 3.5rem); */
+  height: 7.8rem;
+
+}
+.sidebar-chat li a {
+  /* padding: 0.458rem 0.458rem 0rem 0.458rem; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.sidebar-chat li a img {
+  margin-bottom: 0.812rem;
+  width: 4.5833rem;
+  height: 4.5297rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.sidebar-chat li a p {
+  margin-left: 0.2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  letter-spacing: 0.07rem;
+  color: #ffffff;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
