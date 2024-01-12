@@ -572,16 +572,52 @@ Chat list style start
 }
 
 .status {
+  padding: 1rem 4rem;
   height: 7.9rem;
   box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
   background-color: #272831;
   border-radius: 1rem 1rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.status img {
+.status > div {
+  display: flex;
+  gap: 4rem;
+}
+
+.status .profile-pic img {
   width: 5.9rem;
   height: 5.9rem;
   border-radius: 2.95rem;
+}
+
+.search-inbox {
+  width: 2.8rem;
+  height: 2.8rem;
+  object-fit: contain;
+  vertical-align: center;
+}
+
+.options {
+  width: 0.5423rem;
+  height: 2.136rem;
+  object-fit: contain;
+}
+.status * {
+  position: relative;
+  top: 0.35rem;
+}
+.status h3 {
+  height: 2.7rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.09rem;
+  color: #ffffff;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
 }
 .status p {
   height: 1.8rem;
