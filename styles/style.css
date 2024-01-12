@@ -8,6 +8,10 @@ a {
   text-decoration: none; 
   color: inherit; 
 }
+
+:root {
+  font-size: 8px;
+}
 body {
   background-color: #2B2E38;
 }
@@ -229,6 +233,7 @@ body {
   gap: 2rem;  
 }
 
+
 /* Right Container end */
 
 
@@ -348,7 +353,27 @@ body {
   flex-shrink: 0;
 }
 
-/* Chat Divs */
+/* 
+#########################################################
+    Navigation bar End
+#########################################################
+*/
+
+/* 
+#########################################################
+    Client Section Start
+#########################################################
+*/
+.client {
+  margin-right: 4rem;
+  text-align: right;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.6153846154;
+  color: #ffffff;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
 .right-container {
   display: flex;
   flex-direction: column;
@@ -531,4 +556,40 @@ Chat list style start
 .chat-list--inside div:hover .messages-rectangle {
   transform: translateY(100%); /* Move the div from top to bottom */
   transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+/* 
+#########################################################################
+        Inbox Section Start
+#########################################################################
+*/
+
+.inbox {
+  margin-right: 4rem;
+  background-color: #24252b;
+  border-radius: 1rem;
+  box-shadow: 0.7rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+.status {
+  height: 7.9rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #272831;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.status img {
+  width: 5.9rem;
+  height: 5.9rem;
+  border-radius: 2.95rem;
+}
+.status p {
+  height: 1.8rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.06rem;
+  color: #f02857;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
 }
