@@ -657,6 +657,10 @@ Chat list style start
   gap: 1.5rem;
 }
 
+.sent, .received {
+  position: relative;
+}
+
 .sent p{
   float: right;
 
@@ -739,3 +743,100 @@ Typing Area
   font-family: Poppins, 'Source Sans Pro';
   white-space: nowrap;
 }
+
+/* 
+#############################################
+          TEXT INBOX EDIT
+#############################################
+*/
+
+
+.received, .sent {
+  display: flex;
+}
+.received {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.left-row-div {
+  /* text-align: right; */
+}
+
+.right-top-div {
+  max-width: 39.6rem;
+  background-color: #484a4e;
+  border-radius: 1rem;
+  position: relative;
+  padding: 1rem 2rem 1rem 4.6667rem;
+}
+
+/* .received > div {
+  max-width: 39.6rem;
+  height: 10rem; 
+  position: absolute;
+  left: 0.0333rem;
+  top: 0;
+  background-color: #484a4e;
+  border-radius: 1rem;
+}
+
+.received > div > div p {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.1725;
+  color: #ffffff;
+  font-family: Roboto, 'Source Sans Pro';
+} */
+
+/* 
+##################################################
+RECEIVED IMAGE MARKER START
+##################################################
+*/
+
+.received-images-marker {
+  margin-bottom: 4.3136rem;
+  width: 3.0853rem;
+  height: 3.0136rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+
+.received-img {
+  width: 4.6667rem;
+  height: 3.0833rem;
+  position: absolute;
+  left: 0;
+  bottom: -0.6rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+/* .received-time {
+  margin-left: 1.6333rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.received-img {
+  width: 4.6667rem;
+  height: 3.0833rem;
+  position: absolute;
+  left: 0;
+  bottom: 2.0917rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+
+.sent-img {
+  width: 4.6667rem;
+  height: 3.4167rem;
+  position: absolute;
+  top: 7.2417rem;
+  object-fit: contain;
+  vertical-align: top;
+} */
