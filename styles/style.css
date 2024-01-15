@@ -11,7 +11,7 @@ a {
 
 @media screen and (max-width: 1007px) {
   :root {
-    font-size: 5px;
+    font-size: 7px;
   }
 }
 @media screen and (min-width: 1008px) {
