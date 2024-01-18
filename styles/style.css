@@ -772,17 +772,20 @@ Chat list style start
 ###########################################################
 */
 .typing-area {
-  height: 5.9rem;
   border-radius: 4rem;
   display: flex;
   background-color: #2b2e38;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 0 2rem;
 }
 .typing-area > div {
   display: flex;
+  margin: 1.78rem 0;
   gap: 2rem;
+}
+.typing-area .left-side-typing-area {
+  flex: 1;
 }
 .attachements-icon {
   width: 2.4rem;
@@ -805,11 +808,13 @@ Chat list style start
   vertical-align: top;
 }
 
-.typing-area input {
+.typing-area .left-side-typing-area div {
   height: 3rem;
+  width: 100%;
   background-color: #2b2e38;
   border: none;
   outline: none;
+  width: 100%;
   text-align: left;
   font-size: 2rem;
   font-weight: 500;
@@ -817,7 +822,6 @@ Chat list style start
   letter-spacing: 0.1rem;
   color: rgba(255, 255, 255, 0.5);
   font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
 }
 
 /* 
