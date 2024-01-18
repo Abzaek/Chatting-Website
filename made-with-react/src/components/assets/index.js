@@ -1,0 +1,12 @@
+export { default as bannerLogo } from './flat-color-icons-picture-KVe.png';
+export { default as dashboardImage } from './icon-pie-chart-nVS.png';
+export { default as servicesIcon } from './vector-7b2.png';
+export { default as employeesIcon } from './group-Yax.png';
+export { default as artifactIcon } from './vector-GPN.png';
+export { default as toolsIcon } from './vector-ha4.png';
+export { default as credentialsIcon } from './vector-HcQ.png';
+export { default as notesIcon } from './vector-pCc.png';
+export { default as chatIcon } from './group-xuz.png';
+export { default as reportIcon } from './vector-kbN.png';
+export { default as accountIcon } from './vector-XPi.png';
+export { default as settingsIcon } from './vector-7BS.png';

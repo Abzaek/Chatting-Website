@@ -4,6 +4,7 @@ import React from 'react';
 import '../styles/Sidebar.css';
 import '../styles/responsive.css'
 import '../styles/hover.css'
+import * as assets from '../assets/'
 
 const Sidebar = () => {
     return (
@@ -11,7 +12,7 @@ const Sidebar = () => {
             <div className="banner-logo-and-name">
                 <img
                     className="banner-logo"
-                    src="./assets/flat-color-icons-picture-KVe.png"
+                    src={assets.bannerLogo}
                     alt="Banner Logo"
                 />
                 <a href="index.html">
@@ -23,7 +24,7 @@ const Sidebar = () => {
                 <div className="dashboard">
                     <img
                         className="dashboard-image"
-                        src="./assets/icon-pie-chart-nVS.png"
+                        src={assets.dashboardImage}
                         alt="Dashboard Icon"
                     />
                     <p className="dashboard-text">Dashboard</p>
@@ -32,56 +33,56 @@ const Sidebar = () => {
                 <ul className="menus">
                     <li>
                         <a href="#">
-                            <img src="./assets/vector-7b2.png" alt="Services Icon" />
+                            <img src={assets.servicesIcon} alt="Services Icon" />
                             <p className="services">Services</p>
                         </a>
                         <div className="rectangle"></div>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="assets/group-Yax.png" />
+                            <img src={assets.employeesIcon} />
                             <p className="issues">Employees</p>
                         </a>
                         <div className="rectangle"></div>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="assets/vector-GPN.png" />
+                            <img src={assets.artifactIcon} />
                             <p className="artifact">Artifact</p>
                         </a>
                         <div className="rectangle"></div>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="assets/vector-ha4.png" />
+                            <img src={assets.toolsIcon} />
                             <p className="tools">Tools</p>
                         </a>
                         <div className="rectangle"></div>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="assets/vector-HcQ.png" />
+                            <img src={assets.credentialsIcon} />
                             <p className="credentials">Credentials</p>
                         </a>
                         <div className="rectangle"></div>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="assets/vector-pCc.png" />
+                            <img src={assets.notesIcon} />
                             <p className="notes">Notes</p>
                         </a>
                         <div className="rectangle"></div>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="assets/group-xuz.png" />
+                            <img src={assets.chatIcon} />
                             <p>Chat</p>
                         </a>
                         <div className="rectangle"></div>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="assets/vector-kbN.png" />
+                            <img src={assets.reportIcon} />
                             <p>Report</p>
                         </a>
                         <div className="rectangle"></div>
@@ -93,14 +94,14 @@ const Sidebar = () => {
             <ul className="profile-and-settings">
                 <li>
                     <a href="#">
-                        <img src="./assets/vector-XPi.png" alt="Account Icon" />
+                        <img src={assets.accountIcon} alt="Account Icon" />
                         <p>Account</p>
                     </a>
                     <div className="rectangle"></div>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="./assets/vector-7BS.png" alt="Settings Icon" />
+                        <img src={assets.settingsIcon} alt="Settings Icon" />
                         <p>Settings</p>
                     </a>
                     <div className="rectangle"></div>
