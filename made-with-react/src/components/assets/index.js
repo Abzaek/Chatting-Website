@@ -1,9 +1,29 @@
 
 import chatsIcon from './bx-chat.png';
+import charmTickDoubleBsr from './charm-tick-double-bsr.png'
+import icBaselineChatBubble from './ic-baseline-chat-bubble.png'
 import personOutlineIcon from './mdi-person-outline.png';
 import chatBubbleIcon from './bxs-chat.png';
 import announcementIcon from './mingcute-announcement-line.png';
 import settingIcon from './lets-icons-setting-line.png';
+import icBaselineChatBubbleV4U from './ic-baseline-chat-bubble-v4U.png';
+import majesticonsPin from './majesticons-pin.png';
+
+// assets/index.js
+
+import mingcuteAttachmentLine from './mingcute-attachment-line.png';
+import fluentEmoji16Regular from './fluent-emoji-16-regular.png';
+import materialSymbolsSend from './material-symbols-send.png';
+
+
+
+
+// assets/index.js
+
+import ellipse197BgIcon from './ellipse-197-bg.png';
+import mingcuteSearchLineIcon from './mingcute-search-line.png';
+import simpleLineIconsOptionsVerticalIcon from './simple-line-icons-options-vertical.png';
+
 
 import circumSearchIcon from './circum-search.png';
 import ellipse196BgIcon from './ellipse-196-bg.png';
@@ -50,6 +70,10 @@ export { default as dropdownIcon } from './frame-10-2ur.png';
 
 
 export {
+    charmTickDoubleBsr,
+    icBaselineChatBubble,
+    icBaselineChatBubbleV4U,
+    majesticonsPin,
     personOutlineIcon,
     chatBubbleIcon,
     announcementIcon,
@@ -60,6 +84,14 @@ export {
     ellipse196BgCiGIcon,
     ellipse196BgWCGIcon,
     ellipse196BgOMNIcon,
+   
+    mingcuteAttachmentLine,
+    fluentEmoji16Regular,
+    materialSymbolsSend,
+    ellipse197BgIcon,
+    mingcuteSearchLineIcon,
+    simpleLineIconsOptionsVerticalIcon,
+
 };
 
 

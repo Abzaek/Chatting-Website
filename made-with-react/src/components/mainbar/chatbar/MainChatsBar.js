@@ -2,6 +2,7 @@ import React from "react";
 import SidebarChat from "./SidebarChat";
 import '../../styles/mainChatsBar.css';
 import ChatList from "./ChatList";
+import Inbox from "./Inbox";
 
 
 const MainChatsBar = () => {
@@ -11,6 +12,7 @@ const MainChatsBar = () => {
                 <SidebarChat />
                 <ChatList />
             </div>
+            <Inbox />
         </div>
 
     );
