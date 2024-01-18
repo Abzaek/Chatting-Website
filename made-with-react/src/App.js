@@ -4,7 +4,7 @@ import Sidebar from './components/sidebar/Sidebar';
 import MainContainer from './components/mainbar/MainContainer'
 
 const App = () => {
-  const [isSidebarVisible, setIsSidebarVisible] = useState(true);
+  const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
   const toggleSidebar = () => {
     setIsSidebarVisible((prev) => !prev);

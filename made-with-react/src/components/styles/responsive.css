@@ -11,12 +11,12 @@
   
   @media screen and (max-width: 1007px) {
     :root {
-      font-size: 7px;
+      font-size: 9px;
     }
   }
   @media screen and (min-width: 1008px) {
     :root {
-      font-size: 9px;
+      font-size: 11px;
     }
   }
   

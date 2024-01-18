@@ -1,9 +1,11 @@
 
 .navigation-bar {
+    position: fixed;    
     padding: 2.4rem 5.4rem 2.1rem 11.2rem;
     height: 9rem;
     background-color: #272831;
     display: flex;
+    width: 100%;
   }
   
   .navigation-bar ul {

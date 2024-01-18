@@ -1,7 +1,5 @@
 .side-bar {
     padding: 1.3rem 0rem 1.2rem 0rem;
-    width: 23.8rem;
-    /* height: 100%; */
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -68,7 +66,7 @@
   }
   
   .dashboard-text {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0.08rem;
@@ -93,7 +91,6 @@
       margin-right: 6rem;
   }
   .menus li a {
-    width: calc(100% - 6rem);
     display: flex;
     align-items: center;
     flex-shrink: 0;
@@ -110,7 +107,7 @@
   }
   
   .menus li a p {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.08rem;
@@ -121,8 +118,7 @@
   }
   .profile-and-settings {
     margin-top: auto;
-    margin-right: 6.3rem;
-    width: 11.5rem;
+    margin-right: 8.3rem;
     flex-shrink: 0;
   }
   
@@ -130,7 +126,6 @@
       margin-bottom: 3.3rem;
   }
   .profile-and-settings li a {
-    width: 100%;
     display: flex;
     align-items: center;
   }
@@ -145,24 +140,20 @@
   }
   
   .profile-and-settings li a p {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.08rem;
     color: #ffffff;
     font-family: Poppins, "Source Sans Pro";
-    white-space: nowrap;
     flex-shrink: 0;
   }
 
 
 .side-bar {
-    /* ... your existing styles */
-  
-    /* Initially hide the sidebar */
-    transform: translateX(-100%);
+    transform: translateX(-101%);
     transition: transform 0.3s ease-in-out;
-    z-index: 1000; /* Ensure the sidebar is above other content */
+    z-index: 1000;
   }
   
   .side-bar.visible {
