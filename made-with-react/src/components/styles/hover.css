@@ -1,0 +1,36 @@
+.menus .rectangle, .navigation-bar .rectangle,
+.profile-and-settings .rectangle {
+  width: 0;
+  height: 6px; /* Set your underline height */
+  background-color: #f02857; /* Set your underline color */
+  transition: width 0.3s ease; /* Add a transition for a smooth effect */
+}
+.sidebar-chat li .left-side-rectangle{
+  height: 0;
+  width: 14px;
+  border-radius: 1rem 0 0 1rem;
+  background-color: #f02857;
+  transition: height 0.3s ease;
+}
+/* Expand the underline on hover */
+.menus li:hover .rectangle, .navigation-bar li:hover .rectangle,
+.profile-and-settings li:hover .rectangle {
+  width: 100%;
+}
+.sidebar-chat li:hover .left-side-rectangle {
+  height: 100%;
+}
+
+
+.chat-list--inside .messages-rectangle {
+  height: 0;
+  width: 14px; /* Adjust the width as needed */
+  margin-right: 0.5rem;
+  border-radius: 1rem 0 0 1rem;
+  background-color: #f02857;
+  transition: height 0.3s ease;
+}
+
+.chat-list--inside li:hover .messages-rectangle {
+  height: 100%;
+}

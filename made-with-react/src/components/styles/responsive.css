@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none; 
+    color: inherit; 
+  }
+  
+  
+  @media screen and (max-width: 1007px) {
+    :root {
+      font-size: 7px;
+    }
+  }
+  @media screen and (min-width: 1008px) {
+    :root {
+      font-size: 9px;
+    }
+  }
+  
+  body {
+    background-color: #2B2E38;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  

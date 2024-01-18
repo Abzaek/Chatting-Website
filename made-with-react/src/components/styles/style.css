@@ -1,0 +1,914 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+
+@media screen and (max-width: 1007px) {
+  :root {
+    font-size: 7px;
+  }
+}
+@media screen and (min-width: 1008px) {
+  :root {
+    font-size: 9px;
+  }
+}
+
+body {
+  background-color: #2B2E38;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Sidebar styling */
+
+/* 
+##################################################################################
+###################################################################################
+##################################################################################
+*/
+
+.side-bar {
+  padding: 1.3rem 0rem 1.2rem 0rem;
+  width: 23.8rem;
+  /* height: 100%; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #353743;
+  flex-shrink: 0;
+}
+
+.banner-logo-and-name {
+  margin: 0rem 2.516rem 1.3rem 3.1rem;
+  padding: 1.9rem 0rem 2rem 1.1rem;
+  width: calc(100% - 5.6155rem);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.banner-logo {
+  margin: 0rem 2.584rem 0.2rem 0rem;
+  width: 4rem;
+  height: 3.4rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+
+.banner-name {
+  font-size: 3.1068rem;
+  font-weight: 900;
+  line-height: 1.2125;
+  color: #f02857;
+  font-family: Inter, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.dashboard-and-menus {
+  margin-bottom: auto;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.dashboard {
+  box-sizing: border-box;
+  padding: 1.6rem 7.8rem 1.6rem 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #f02857;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+
+.dashboard-image {
+  margin-right: 2.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+
+.dashboard-text {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.08rem;
+  color: #ffffff;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.menus {
+  padding: 1.7rem 3rem 0rem 3rem;
+  margin-top: 4rem;
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.menus li {
+    margin-bottom: 3.3rem;
+    margin-right: 6rem;
+}
+.menus li a {
+  width: calc(100% - 6rem);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+
+.menus li a img {
+  margin-right: 2.4rem;
+  width: 2rem;
+  height: 1.75rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+
+.menus li a p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.08rem;
+  color: #ffffff;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.profile-and-settings {
+  margin-top: auto;
+  margin-right: 6.3rem;
+  width: 11.5rem;
+  flex-shrink: 0;
+}
+
+.profile-and-settings li {
+    margin-bottom: 3.3rem;
+}
+.profile-and-settings li a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.profile-and-settings li a img {
+  margin-right: 2.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+
+.profile-and-settings li a p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.08rem;
+  color: #ffffff;
+  font-family: Poppins, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* hover effect start */
+
+
+/* Set initial styles for .rectangle */
+.menus .rectangle, .navigation-bar .rectangle,
+.profile-and-settings .rectangle {
+  width: 0;
+  height: 6px; /* Set your underline height */
+  background-color: #f02857; /* Set your underline color */
+  transition: width 0.3s ease; /* Add a transition for a smooth effect */
+}
+.sidebar-chat li .left-side-rectangle{
+  height: 0;
+  width: 14px;
+  border-radius: 1rem 0 0 1rem;
+  background-color: #f02857;
+  transition: height 0.3s ease;
+}
+/* Expand the underline on hover */
+.menus li:hover .rectangle, .navigation-bar li:hover .rectangle,
+.profile-and-settings li:hover .rectangle {
+  width: 100%;
+}
+.sidebar-chat li:hover .left-side-rectangle {
+  height: 100%;
+}
+
+
+.chat-list--inside .messages-rectangle {
+  height: 0;
+  width: 14px; /* Adjust the width as needed */
+  margin-right: 0.5rem;
+  border-radius: 1rem 0 0 1rem;
+  background-color: #f02857;
+  transition: height 0.3s ease;
+}
+
+.chat-list--inside li:hover .messages-rectangle {
+  height: 100%;
+}
+
+
+/* hover effect end*/
+
+/* Right Container start*/
+
+.right-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;  
+}
+
+
+/* Right Container end */
+
+
+/* Navigation bar styling */
+
+/* 
+#############################################################
+#############################################################
+*/
+
+
+
+.navigation-bar {
+  padding: 2.4rem 5.4rem 2.1rem 11.2rem;
+  height: 9rem;
+  background-color: #272831;
+  display: flex;
+}
+
+.navigation-bar ul {
+  flex: 1;
+  display: flex;
+}
+
+.navigation-bar ul li{
+  position: relative;
+  padding: 0 2.7rem;
+}
+.navigation-links li::after {
+  content: '';
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  height: 60%; /* Vertical line height equal to the child's height */
+  width: 1px; /* Width of the vertical line */
+  background-color: #ada7a7; /* Color of the vertical line */
+}
+.navigation-links li:last-child::after {
+  display: none;
+}
+.navigation-bar ul li a{
+  height: 4.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.navigation-bar img {
+  margin: 0rem 0.4rem 0.52rem 0rem;
+  width: 2.4rem;
+  height: 2.08rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.navigation-bar p {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.75;
+  color: #ffffff;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.search {
+  font-size: 2.4rem;
+  font-weight: 600;
+  width: 10rem;
+  border-radius: 22px;
+  border-width: 0px;
+  outline: none;
+  line-height: 1.75;
+  background-color: #272831;
+  color: #ffffff;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.search::placeholder {
+  color: #ffffff;
+}
+.profile-and-notifications {
+  height: calc(100% - 1.7rem);
+  display: flex;
+  gap: 2rem;
+  flex-shrink: 0;
+}
+.profile-and-notifications div {
+  display: flex;
+}
+.notification-and-theme {
+  display: flex;
+  gap: 1.7rem;
+}
+.profile-and-notifications div p{
+  margin-right: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+
+.profile-photo {
+  margin-right: 1.2rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../assets/ellipse-169-bg.png);
+  border-radius: 1.4rem;
+  flex-shrink: 0;
+}
+
+/* 
+#########################################################
+    Navigation bar End
+#########################################################
+*/
+
+/* 
+#########################################################
+    Client Section Start
+#########################################################
+*/
+.client {
+  margin-right: 4rem;
+  text-align: right;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.6153846154;
+  color: #ffffff;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.main-div {
+  display: flex;
+  gap: 4rem;
+}
+
+.inbox {
+  flex: 1;
+}
+
+.main-div .inside-main {
+  display: flex;
+  gap: 1rem;
+}
+.inside-main .chat-list {
+  flex: 1;
+}
+/* general layout end */
+
+.sidebar-chat {
+  list-style: none;
+  height: 100%;
+  padding: 15.7rem 0.1rem 3.017rem;
+  background-color: #272831;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 0.7rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+.sidebar-chat li {
+  margin: 0rem 1.8rem 1.4rem;
+  height: 7.8rem;
+  display: flex;
+
+}
+.sidebar-chat li a {
+  padding: 0.458rem 0.458rem 0rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.sidebar-chat li a img {
+  margin-bottom: 0.812rem;
+  width: 4.5833rem;
+  height: 4.5297rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.sidebar-chat li a p {
+  margin-left: 0.2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  letter-spacing: 0.07rem;
+  color: #ffffff;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+
+
+/* 
+Chat list style start
+*/
+.chat-list {
+  padding: 2.9rem 1.5rem 3.017rem 1.4rem;
+  height: 100%;
+  background-color: #272831;
+  border-radius: 0 1rem 1rem 0;
+  box-shadow: 0.7rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+.messages {
+  margin: 0rem 0rem 3.5rem 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.1725;
+  color: #ffffff;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+}
+
+.search-chats {
+  margin: 0rem 0rem 2.6rem 0.1rem;
+  padding: 1.5rem 3.611rem 0.7rem 3.611rem;
+  display: flex;
+  align-items: center;
+  background-color: #2b2c35;
+  border-radius: 2.5rem;
+}
+
+.search-chats img {
+  margin: 0rem 1.511rem 0.3rem 0rem;
+  width: 1.7779rem;
+  height: 1.7879rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.search-chats input {
+  font-size: 2.4rem;
+  font-weight: 200;
+  line-height: 1.1725;
+  color: #ffffff;
+  background-color: #2b2c35;
+  outline: none;
+  border: 0;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.chat-list--inside {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.chat-list--inside li {
+  display: flex;
+  height: 8.4rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+
+}
+.chat-list--inside img {
+  margin-right: 1.7rem;
+  width: 6.3rem;
+  height: 6.3rem;
+  border-radius: 3.15rem;
+  flex-shrink: 0;
+}
+
+.message-box {
+  display: flex;
+  flex: 1;
+}
+.message-box a {
+  display: flex;
+  justify-content: space-between;
+}
+.second-a {
+  flex: 1;
+}
+.message-box a h3 {
+  margin: 0rem 0.5rem 0.9rem 0rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.1725;
+  letter-spacing: 0.08rem;
+  color: #ffffff;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.message-box a p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2825;
+  letter-spacing: 0.06rem;
+  color: #ffffff;
+  font-family: Pontano Sans, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.unread-messages {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0.8rem;
+  margin-top: 0.5rem;
+  height: 1.5rem;
+  background-color: #f02857;
+  border-radius: 5rem;
+}
+
+.chat-list--inside div:hover .messages-rectangle {
+  transform: translateY(100%); /* Move the div from top to bottom */
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+/* 
+#########################################################################
+        Inbox Section Start
+#########################################################################
+*/
+
+.inbox {
+  margin-right: 4rem;
+  background-color: #24252b;
+  border-radius: 1rem;
+  box-shadow: 0.7rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
+  display: flex;
+  gap: 0.6rem;
+  flex-direction: column;
+}
+
+.status {
+  padding: 1rem 4rem;
+  height: 7.9rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  background-color: #272831;
+  border-radius: 1rem 1rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status > div {
+  display: flex;
+  gap: 4rem;
+}
+
+.status .profile-pic img {
+  width: 5.9rem;
+  height: 5.9rem;
+  border-radius: 2.95rem;
+}
+
+.search-inbox {
+  width: 2.8rem;
+  height: 2.8rem;
+  object-fit: contain;
+  vertical-align: center;
+}
+
+.options {
+  width: 0.5423rem;
+  height: 2.136rem;
+  object-fit: contain;
+}
+.status * {
+  position: relative;
+  top: 0.35rem;
+}
+.status h3 {
+  height: 2.7rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.09rem;
+  color: #ffffff;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.status p {
+  height: 1.8rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.06rem;
+  color: #f02857;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+
+
+/* 
+##################################################################
+                  INBOX AREA
+##################################################################
+*/
+
+.inbox-area {
+  flex: 1;
+  margin: 0 4.2rem 2.4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.inbox-area .chat-messages {
+  padding: 0rem 3rem 0rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
+
+.text-date-div span {
+  padding: 0.9rem 1.6rem;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 1.1725;
+  color: #ffffff;
+  font-family: Roboto, 'Source Sans Pro';
+  background-color: #2b2e38;
+  border-radius: 1rem;
+  white-space: nowrap;
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.text-date-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* 
+##########################################################
+              SENT MESSAGES STYLING
+##########################################################
+*/
+
+
+.sent_text {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.1725;
+  color: #fffcfc;
+  font-family: Roboto, 'Source Sans Pro';
+}
+
+
+.sent_{
+  max-width: 60rem;
+  min-width: 20rem;
+  
+  display: flex;
+  align-items: flex-end;
+  
+}
+
+.messages_ {
+  max-width: fit-content;
+  padding: 3rem;
+  background-color: #2b2e38;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.arrow_icon {
+  position: absolute;
+  bottom: -5rem; 
+  right: .4rem; 
+  width: 4.6667rem;
+  height: 11.8167rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+
+.sent_time {
+  font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.3625;
+    color: #000000;
+    font-family: Open Sans, 'Source Sans Pro';
+    white-space: nowrap;
+}
+
+
+.seen_message{
+  margin-bottom: 5.35rem;
+  width: 3.3438rem;
+  height: 1.3rem;
+  margin-left: 2rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.sent_messages{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;  
+}
+/* 
+##########################################################
+        SENT MESSAGE STYLING
+##########################################################
+*/
+/* 
+###########################################################
+                Typing Area
+###########################################################
+*/
+.typing-area {
+  border-radius: 4rem;
+  display: flex;
+  background-color: #2b2e38;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2rem;
+}
+.typing-area > div {
+  display: flex;
+  margin: 1.78rem 0;
+  gap: 2rem;
+}
+.typing-area .left-side-typing-area {
+  flex: 1;
+}
+.attachements-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+
+.emoji-icon {
+  width: 2.55rem;
+  height: 2.55rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+
+.send-icon {
+  width: 2.6917rem;
+  height: 2.2667rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+
+.typing-area .left-side-typing-area div {
+  height: 3rem;
+  width: 100%;
+  background-color: #2b2e38;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Poppins, 'Source Sans Pro';
+}
+
+/* 
+#############################################
+          TEXT INBOX EDIT
+#############################################
+*/
+
+
+.received {
+  display: flex;
+}
+.received {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4rem;
+}
+
+.left-row-div {
+  margin-left: 3rem;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+}
+.right-pushed-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.right-top-div {
+  max-width: 60rem;
+  background-color: #484a4e;
+  border-radius: 1rem;
+  position: relative;
+  padding: 1rem 4.6667rem 1rem 4.6667rem;
+}
+.right-top-div p {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.1725;
+  color: #ffffff;
+  font-family: Roboto, 'Source Sans Pro';
+}
+
+ /*  
+##################################################
+RECEIVED IMAGE MARKER START
+##################################################
+*/
+
+.received-images-marker {
+  margin-bottom: 4.3136rem;
+  width: 3.0853rem;
+  height: 3.0136rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+
+/* 
+#####################################################
+        an image that make a div to have a pointy edge
+#####################################################
+*/
+.received-img {
+  width: 4.6667rem;
+  height: 3.0833rem;
+  position: absolute;
+  left: 0;
+  bottom: -0.6rem;
+  object-fit: contain;
+  vertical-align: top;
+}
+
+/* 
+####################################################
+TIME A MESSAGE REACIEVED AT
+####################################################
+*/
+.received-time {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.3625;
+  color: #000000;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+}
+
