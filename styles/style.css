@@ -377,7 +377,7 @@ ul {
     Client Section Start
 #########################################################
 */
-/* .client {
+.client {
   margin-right: 4rem;
   text-align: right;
   font-size: 2.6rem;
@@ -386,11 +386,11 @@ ul {
   color: #ffffff;
   font-family: Poppins, 'Source Sans Pro';
   white-space: nowrap;
-} */
+}
 
 /* 
 ###########################################################
-                      right container start
+                    right container
 ###########################################################
 */
 .right-container {
@@ -399,22 +399,22 @@ ul {
   gap: 3rem;
 }
 
-/* .main-div {
+.main-div {
   display: flex;
   gap: 4rem;
-} */
+}
 
 .inbox {
   flex: 1;
 }
 
-/* .main-div .inside-main {
+.main-div .inside-main {
   display: flex;
   gap: 1rem;
 }
 .inside-main .chat-list {
   flex: 1;
-} */
+}
 /* general layout end */
 
 /* 
@@ -423,7 +423,7 @@ ul {
 #################################################################################
 */
 
-/* .sidebar-chat {
+.sidebar-chat {
   list-style: none;
   height: 100%;
   padding: 15.7rem 0.1rem 3.017rem;
@@ -465,7 +465,7 @@ ul {
   font-family: Open Sans, 'Source Sans Pro';
   white-space: nowrap;
   flex-shrink: 0;
-} */
+}
 
 
 
@@ -474,7 +474,7 @@ ul {
                     Chat list style start
 ###########################################################################
 */
-/* .chat-list {
+.chat-list {
   padding: 2.9rem 1.5rem 3.017rem 1.4rem;
   height: 100%;
   background-color: #272831;
@@ -581,9 +581,9 @@ ul {
 }
 
 .chat-list--inside div:hover .messages-rectangle {
-  transform: translateY(100%); /* Move the div from top to bottom */
-  transition: transform 0.3s ease; /* Smooth transition effect */
-} */
+  transform: translateY(100%); 
+  transition: transform 0.3s ease; 
+}
 
 /* 
 #########################################################################

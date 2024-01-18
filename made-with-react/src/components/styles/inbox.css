@@ -7,6 +7,7 @@
     display: flex;
     gap: 0.6rem;
     flex-direction: column;
+    width: 100%;
   }
   
   .status {
@@ -55,7 +56,6 @@
     letter-spacing: 0.09rem;
     color: #ffffff;
     font-family: Poppins, 'Source Sans Pro';
-    white-space: nowrap;
   }
   .status p {
     height: 1.8rem;
@@ -74,7 +74,11 @@
                     INBOX AREA
   ##################################################################
   */
-  
+  .chat-messages {
+    overflow-y: auto;
+    max-height: 500px;
+    z-index: 99;
+  }
   .inbox-area {
     flex: 1;
     margin: 0 4.2rem 2.4rem 4rem;
@@ -91,9 +95,10 @@
   }
   
   
-  
+
   .text-date-div span {
     padding: 0.9rem 1.6rem;
+    z-index: 100;
     font-weight: 500;
     font-size: 2.5rem;
     line-height: 1.1725;

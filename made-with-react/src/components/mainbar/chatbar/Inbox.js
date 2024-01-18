@@ -32,7 +32,8 @@ const Inbox = () => {
                 <div className="text-date-div">
                     <span>TODAY</span>
                 </div>
-                <div className="chat-messages"></div>
+
+            <div className="chat-messages">
                 <div className="received">
                     <div className="left-row-div">
                         <div className="right-pushed-div">
@@ -136,7 +137,7 @@ const Inbox = () => {
                         <p className="sent_time">10:00AM</p>
                     </div>
                 </div>
-
+            </div>
                 <div className="typing-area">
                     <div className="left-side-typing-area">
                         <img
