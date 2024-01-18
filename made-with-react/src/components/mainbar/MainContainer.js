@@ -4,10 +4,10 @@ import '../styles/responsive.css'
 import '../styles/hover.css'
 import NavigationBar from "./NavigationBar";
 
-const MainContainer = () => {
+const MainContainer = (props) => {
     return (
         <div className="right-container">
-            <NavigationBar/>
+            <NavigationBar toggleSidebar={props.toggleSidebar}/>
             
         </div>
     );

@@ -176,10 +176,10 @@
     position: fixed;
     top: 20px;
     left: 20px;
-    z-index: 1100; /* Ensure the hamburger is above the sidebar */
   }
   
   .bar {
+    z-index: 200000;
     height: 7px;
     width: 40px;
     background-color: #f02857;

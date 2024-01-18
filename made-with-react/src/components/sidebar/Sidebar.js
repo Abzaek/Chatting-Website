@@ -6,14 +6,10 @@ import '../styles/responsive.css'
 import '../styles/hover.css'
 import * as assets from '../assets/'
 
-const Sidebar = () => {
-    const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+const Sidebar = ({isVisible}) => {
 
-    const toggleSidebar = () => {
-        setIsSidebarVisible(!isSidebarVisible);
-    };
     return (
-        <div className={`side-bar ${isSidebarVisible ? 'visible' : ""}`} style={{position: 'absolute'}}>
+        <div className={`side-bar ${isVisible ? 'visible' : ''}`} style={{position: 'absolute'}}>
             <div className="banner-logo-and-name">
                 <img
                     className="banner-logo"
@@ -112,14 +108,7 @@ const Sidebar = () => {
                     <div className="rectangle"></div>
                 </li>
             </ul>
-            {/* Hamburger Menu */}
-            {/* <div>
-                <div className="hamburger-menu" onClick={toggleSidebar}>
-                    <div className="bar"></div>
-                    <div className="bar"></div>
-                    <div className="bar"></div>
-                </div>
-            </div> */}
+            
         </div>
 
     );

@@ -6,9 +6,23 @@ import '../styles/hover.css'
 import '../styles/responsive.css'
 import * as assets from '../assets';
 
-const NavigationBar = () => {
+const NavigationBar = (props) => {
+    const handleClick = (event) => {
+        event.stopPropagation();
+        props.toggleSidebar();
+      };
     return (
+        
+
         <div className="navigation-bar">
+            {/* Hamburger Menu */}
+            <div>
+                <div className="hamburger-menu" onClick={handleClick}>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
+                </div>
+            </div>
             <ul className="navigation-links">
                 <li>
                     <a href="last.html">
