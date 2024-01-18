@@ -1,0 +1,10 @@
+.client {
+    margin-right: 4rem;
+    text-align: right;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.6153846154;
+    color: #ffffff;
+    font-family: Poppins, 'Source Sans Pro';
+    white-space: nowrap;
+  }

@@ -18,10 +18,8 @@ const App = () => {
       
     };
 
-    // Add event listener to handle clicks outside the sidebar
     document.addEventListener('click', handleOutsideClick);
 
-    // Cleanup the event listener when the component unmounts
     return () => {
       document.removeEventListener('click', handleOutsideClick);
     };

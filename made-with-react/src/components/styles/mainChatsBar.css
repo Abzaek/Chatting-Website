@@ -1,0 +1,9 @@
+.main-div {
+  display: flex;
+  gap: 4rem;
+}
+
+.inside-main {
+  display: flex;
+  gap: 1rem;
+}

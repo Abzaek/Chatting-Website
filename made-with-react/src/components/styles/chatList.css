@@ -1,0 +1,113 @@
+.chat-list {
+  flex: 1;
+}
+
+.chat-list {
+  padding: 2.9rem 1.5rem 3.017rem 1.4rem;
+  height: 100%;
+  background-color: #272831;
+  border-radius: 0 1rem 1rem 0;
+  box-shadow: 0.7rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+.messages {
+  margin: 0rem 0rem 3.5rem 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.1725;
+  color: #ffffff;
+  font-family: Roboto, "Source Sans Pro";
+  white-space: nowrap;
+}
+
+.search-chats {
+  margin: 0rem 0rem 2.6rem 0.1rem;
+  padding: 1.5rem 3.611rem 0.7rem 3.611rem;
+  display: flex;
+  align-items: center;
+  background-color: #2b2c35;
+  border-radius: 2.5rem;
+}
+
+.search-chats img {
+  margin: 0rem 1.511rem 0.3rem 0rem;
+  width: 1.7779rem;
+  height: 1.7879rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.search-chats input {
+  font-size: 2.4rem;
+  font-weight: 200;
+  line-height: 1.1725;
+  color: #ffffff;
+  background-color: #2b2c35;
+  outline: none;
+  border: 0;
+  font-family: Roboto, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.chat-list--inside {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.chat-list--inside li {
+  display: flex;
+  height: 8.4rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+.chat-list--inside img {
+  margin-right: 1.7rem;
+  width: 6.3rem;
+  height: 6.3rem;
+  border-radius: 3.15rem;
+  flex-shrink: 0;
+}
+
+.message-box {
+  display: flex;
+  flex: 1;
+}
+.message-box a {
+  display: flex;
+  justify-content: space-between;
+}
+.second-a {
+  flex: 1;
+}
+.message-box a h3 {
+  margin: 0rem 0.5rem 0.9rem 0rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.1725;
+  letter-spacing: 0.08rem;
+  color: #ffffff;
+  font-family: Roboto, "Source Sans Pro";
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.message-box a p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2825;
+  letter-spacing: 0.06rem;
+  color: #ffffff;
+  font-family: Pontano Sans, "Source Sans Pro";
+  white-space: nowrap;
+}
+.unread-messages {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0.8rem;
+  margin-top: 0.5rem;
+  height: 1.5rem;
+  background-color: #f02857;
+  border-radius: 5rem;
+}
+
+.chat-list--inside div:hover .messages-rectangle {
+  transform: translateY(100%); /* Move the div from top to bottom */
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}

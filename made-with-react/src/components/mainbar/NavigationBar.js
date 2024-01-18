@@ -10,9 +10,9 @@ const NavigationBar = (props) => {
     const handleClick = (event) => {
         event.stopPropagation();
         props.toggleSidebar();
-      };
+    };
     return (
-        
+
 
         <div className="navigation-bar">
             {/* Hamburger Menu */}
@@ -65,19 +65,20 @@ const NavigationBar = (props) => {
                     </a>
                     <div class="rectangle"></div>
                 </li>
+                <li href="#">
+                    <img
+                        src={assets.searchIcon}
+                    />
+                    <input
+                        type="search"
+                        className="search"
+                        name="search"
+                        placeholder="Search"
+                        id=""
+                    />
+                </li>
             </ul>
-            <div href="#">
-                <img
-                    src={assets.searchIcon}
-                />
-                <input
-                    type="search"
-                    className="search"
-                    name="search"
-                    placeholder="Search"
-                    id=""
-                />
-            </div>
+
             <div className="profile-and-notifications">
                 <div className="notification-and-theme">
                     <img
