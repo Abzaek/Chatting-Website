@@ -1,0 +1,107 @@
+
+.navigation-bar {
+    padding: 2.4rem 5.4rem 2.1rem 11.2rem;
+    height: 9rem;
+    background-color: #272831;
+    display: flex;
+  }
+  
+  .navigation-bar ul {
+    flex: 1;
+    display: flex;
+  }
+  
+  .navigation-bar ul li{
+    position: relative;
+    padding: 0 2.7rem;
+  }
+  .navigation-links li::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
+    height: 60%; /* Vertical line height equal to the child's height */
+    width: 1px; /* Width of the vertical line */
+    background-color: #ada7a7; /* Color of the vertical line */
+  }
+  .navigation-links li:last-child::after {
+    display: none;
+  }
+  .navigation-bar ul li a{
+    height: 4.2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navigation-bar img {
+    margin: 0rem 0.4rem 0.52rem 0rem;
+    width: 2.4rem;
+    height: 2.08rem;
+    object-fit: contain;
+    vertical-align: top;
+    flex-shrink: 0;
+  }
+  .navigation-bar p {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.75;
+    color: #ffffff;
+    font-family: Poppins, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  
+  .search {
+    font-size: 2.4rem;
+    font-weight: 600;
+    width: 10rem;
+    border-radius: 22px;
+    border-width: 0px;
+    outline: none;
+    line-height: 1.75;
+    background-color: #272831;
+    color: #ffffff;
+    font-family: Poppins, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  
+  .search::placeholder {
+    color: #ffffff;
+  }
+  .profile-and-notifications {
+    height: calc(100% - 1.7rem);
+    display: flex;
+    gap: 2rem;
+    flex-shrink: 0;
+  }
+  .profile-and-notifications div {
+    display: flex;
+  }
+  .notification-and-theme {
+    display: flex;
+    gap: 1.7rem;
+  }
+  .profile-and-notifications div p{
+    margin-right: 0.4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #ffffff;
+    font-family: Poppins, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  
+  
+  .profile-photo {
+    margin-right: 1.2rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../assets/ellipse-169-bg.png);
+    border-radius: 1.4rem;
+    flex-shrink: 0;
+  }

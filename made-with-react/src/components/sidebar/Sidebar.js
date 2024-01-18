@@ -1,14 +1,19 @@
 // components/sidebar/Sidebar.js
 
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Sidebar.css';
 import '../styles/responsive.css'
 import '../styles/hover.css'
 import * as assets from '../assets/'
 
 const Sidebar = () => {
+    const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+
+    const toggleSidebar = () => {
+        setIsSidebarVisible(!isSidebarVisible);
+    };
     return (
-        <div className="side-bar">
+        <div className={`side-bar ${isSidebarVisible ? 'visible' : ""}`} style={{position: 'absolute'}}>
             <div className="banner-logo-and-name">
                 <img
                     className="banner-logo"
@@ -107,8 +112,18 @@ const Sidebar = () => {
                     <div className="rectangle"></div>
                 </li>
             </ul>
+            {/* Hamburger Menu */}
+            {/* <div>
+                <div className="hamburger-menu" onClick={toggleSidebar}>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
+                </div>
+            </div> */}
         </div>
+
     );
 };
+
 
 export default Sidebar;
