@@ -2,15 +2,17 @@
 .navigation-bar {
     position: fixed;    
     padding: 2.4rem 5.4rem 2.1rem 11.2rem;
-    height: 9rem;
+    height: 8rem;
     background-color: #272831;
     display: flex;
+    gap: 4rem;
     width: 100%;
-    z-index: 1000;
+    z-index: 900;
   }
   
   .navigation-bar ul {
     flex: 1;
+    overflow-x: auto;
     display: flex;
   }
   

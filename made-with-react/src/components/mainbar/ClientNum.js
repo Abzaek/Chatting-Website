@@ -7,7 +7,7 @@ const ClientNum = () => {
         <>
         <div style={{
             backgroundColor: '#272831',
-            height: '9rem',
+            height: '8rem',
         }}>
 
         </div>

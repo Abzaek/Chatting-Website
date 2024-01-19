@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import '../../styles/chatList.css';
 import '../../styles/responsive.css';
 import '../../styles/hover.css';
-import * as assets from '../../assets'; 
+import * as assets from '../../assets';
 
 const ChatList = () => {
   return (
@@ -19,6 +19,7 @@ const ChatList = () => {
             <a href="#">
               <img src={assets.ellipse196BgIcon} alt="Profile" />
             </a>
+
             <a className="second-a" href="#">
               <div>
                 <h3>Users Communication</h3>
