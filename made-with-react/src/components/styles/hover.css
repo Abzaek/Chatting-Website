@@ -3,14 +3,14 @@
   width: 0;
   height: 6px; /* Set your underline height */
   background-color: #f02857; /* Set your underline color */
-  transition: width 0.3s ease; /* Add a transition for a smooth effect */
+  transition: width 0.6s ease; /* Add a transition for a smooth effect */
 }
 .sidebar-chat li .left-side-rectangle{
   height: 0;
   width: 14px;
   border-radius: 1rem 0 0 1rem;
   background-color: #f02857;
-  transition: height 0.3s ease;
+  transition: height 0.6s ease;
 }
 /* Expand the underline on hover */
 .menus li:hover .rectangle, .navigation-bar li:hover .rectangle,
@@ -28,9 +28,26 @@
   margin-right: 0.5rem;
   border-radius: 1rem 0 0 1rem;
   background-color: #f02857;
-  transition: height 0.3s ease;
+  transition: height 0.6s ease;
 }
 
 .chat-list--inside li:hover .messages-rectangle {
   height: 100%;
 }
+
+
+  /* Hamburger Menu Styles */
+  .hamburger-menu {
+    cursor: pointer;
+    
+  }
+  
+  .bar {
+    height: 7px;
+    width: 40px;
+    background-color: #ffffff;
+    transition: background-color 0.6s ease;
+  }
+  .hamburger-menu:hover .bar{
+    background-color: #f02857;
+  }

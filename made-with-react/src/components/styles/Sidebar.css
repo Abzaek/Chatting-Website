@@ -1,4 +1,7 @@
 .side-bar {
+    position: absolute;
+    overflow-y: scroll;
+    height: 100%;
     padding: 1.3rem 0rem 1.2rem 0rem;
     align-items: center;
     display: flex;
@@ -173,7 +176,10 @@
     z-index: 200000;
     height: 7px;
     width: 40px;
-    background-color: #f02857;
+    background-color: #ffffff;
     margin: 6px 0;
+    transition: background-color 0.6s ease;
   }
-  
+  .hamburger-menu:hover .bar{
+    background-color: #f02857;
+  }

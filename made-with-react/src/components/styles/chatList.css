@@ -5,6 +5,7 @@
 .chat-list {
   padding: 2.9rem 1.5rem 3.017rem 1.4rem;
   height: 100%;
+  width: 100%;
   background-color: #272831;
   border-radius: 0 1rem 1rem 0;
   box-shadow: 0.7rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25);
@@ -23,6 +24,7 @@
 }
 
 .search-chats {
+  overflow: hidden;
   margin: 0rem 0rem 2.6rem 0.1rem;
   padding: 1.5rem 3.611rem 0.7rem 3.611rem;
   display: flex;
@@ -52,6 +54,8 @@
   flex-shrink: 0;
 }
 .chat-list--inside {
+  overflow-y: scroll;
+  height: 550px;
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
@@ -72,7 +76,7 @@
 .message-box {
   display: flex;
   flex: 1;
-  width: calc(100% - 14px);
+  width: calc(100% - 20px);
 }
 .message-box a {
   display: flex;
@@ -81,7 +85,7 @@
 }
 .second-a {
   flex: 1;
-  max-width: calc(100% - 9rem);
+  max-width: calc(100% - 10rem);
   display: flex;
   justify-content: space-between;
 }
@@ -89,7 +93,7 @@
 .second-a--insideDiv {
   width: calc(100% - 7rem);
 }
-.second-a--insideDiv h3, p {
+.second-a--insideDiv >  * {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

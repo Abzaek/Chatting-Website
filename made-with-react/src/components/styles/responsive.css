@@ -16,13 +16,13 @@
   } */
   @media screen and (min-width: 1008px) {
     :root {
-      font-size: 10.4px;
+      font-size: 12px;
     }
   }
   
   body {
     background-color: #2B2E38;
-    height: 100vh;
+    height: 100dvh;
     z-index: -3;
   }
   .hidden {
@@ -30,6 +30,7 @@
   }
   .expand {
     width: 100%;
+    margin-right: 4rem;
   }
   .limit-size {
     max-width: 457px;

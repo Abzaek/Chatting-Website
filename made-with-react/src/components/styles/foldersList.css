@@ -11,7 +11,8 @@
     margin: 0rem 1.8rem 1.4rem;
     height: 7.8rem;
     display: flex;
-  
+    justify-content: center;
+    align-items: center;
   }
   .sidebar-chat li a {
     padding: 0.458rem 0.458rem 0rem;

@@ -396,6 +396,7 @@ ul {
 .main-div {
   display: flex;
   gap: 4rem;
+  flex: 1;
 }
 
 .inbox {

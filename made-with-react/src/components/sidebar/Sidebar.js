@@ -9,7 +9,7 @@ import * as assets from '../assets/'
 const Sidebar = ({isVisible}) => {
 
     return (
-        <div className={`side-bar ${isVisible ? 'visible' : ''}`} style={{position: 'absolute'}}>
+        <div className={`side-bar ${isVisible ? 'visible' : ''}`}>
             <div className="banner-logo-and-name">
                 <img
                     className="banner-logo"
