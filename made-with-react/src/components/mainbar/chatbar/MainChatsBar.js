@@ -11,12 +11,8 @@ const MainChatsBar = () => {
     useEffect(() => {
         const checkWindowSize = () => {
             if (isSmall == window.innerWidth > 1300) {
-                console.log('no it is not')
             }
-            setIsSmall(window.innerWidth < 1392);
-            if (isSmall == window.innerWidth < 1392) {
-                console.log('yeah it is')
-            }
+            setIsSmall(window.innerWidth < 1300);
         }
         checkWindowSize();
 
@@ -32,7 +28,7 @@ const MainChatsBar = () => {
         <div className={`main-div`}>
             <div className={`inside-main ${displayer}`}>
                 <SidebarChat />
-                <ChatList  />
+                <ChatList isSmall={isSmall} />
             </div>
             {
                 !isSmall && <Inbox />

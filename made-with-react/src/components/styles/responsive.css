@@ -29,10 +29,18 @@
     display: none;
   }
   .expand {
-    flex: 1;
     width: 100%;
   }
-  
+  .limit-size {
+    max-width: 457px;
+  }
+ 
+  .truncate-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+ 
   ul {
     list-style-type: none;
   }
