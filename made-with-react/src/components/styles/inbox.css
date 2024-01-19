@@ -215,6 +215,7 @@
 }
 
 .emoji-icon {
+  cursor: pointer;
   width: 2.55rem;
   height: 2.55rem;
   object-fit: contain;

@@ -2,8 +2,38 @@ import React, {useState, useEffect} from "react";
 import * as assets from '../../assets';
 import '../../styles/responsive.css';
 import '../../styles/inbox.css';
+import EmojiPicker from "emoji-picker-react";
 
 const Inbox = () => {
+
+    const [isPickerVisible, setIsPickerVisible] = useState(false);
+    
+
+    useEffect(() => {
+        const handleOutsideClick = (event) => {
+          if (isPickerVisible && !event.target.closest('.emoji-S')) {
+            setIsPickerVisible(false);
+          }
+          
+        };
+    
+        document.addEventListener('click', handleOutsideClick);
+
+
+        const handleEmojiClick = (event) => {
+                setIsPickerVisible(true)
+                event.stopPropagation();
+           
+        };
+
+        document.querySelector('.emoji-S').addEventListener('click', handleEmojiClick);
+    
+        return () => {
+          document.removeEventListener('click', handleOutsideClick);
+        };
+
+      }, [isPickerVisible]);
+
 
     return (
         <div className='inbox'>
@@ -168,12 +198,18 @@ const Inbox = () => {
                             aria-multiline={true}
                         />
                     </div>
-                    <div>
+                    <div className="emoji-S">
+                        {
+                            !isPickerVisible ? 
+                        
                         <img
                             className="emoji-icon"
                             src={assets.fluentEmoji16Regular}
                             alt="Emoji Icon"
                         />
+                        :
+                        <EmojiPicker />
+                        }
                         <img
                             className="send-icon"
                             src={assets.materialSymbolsSend}
