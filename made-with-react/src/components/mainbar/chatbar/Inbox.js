@@ -1,38 +1,39 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import * as assets from '../../assets';
 import '../../styles/responsive.css';
 import '../../styles/inbox.css';
 import EmojiPicker from "emoji-picker-react";
+import { SkinTones } from 'emoji-picker-react';
 
 const Inbox = () => {
 
     const [isPickerVisible, setIsPickerVisible] = useState(false);
-    
+
 
     useEffect(() => {
         const handleOutsideClick = (event) => {
-          if (isPickerVisible && !event.target.closest('.emoji-S')) {
-            setIsPickerVisible(false);
-          }
-          
+            if (isPickerVisible && !event.target.closest('.emoji-container--inside')) {
+                setIsPickerVisible(false);
+            }
+
         };
-    
+
         document.addEventListener('click', handleOutsideClick);
 
 
         const handleEmojiClick = (event) => {
-                setIsPickerVisible(true)
-                event.stopPropagation();
-           
+            setIsPickerVisible(true)
+            event.stopPropagation();
+
         };
 
         document.querySelector('.emoji-S').addEventListener('click', handleEmojiClick);
-    
+
         return () => {
-          document.removeEventListener('click', handleOutsideClick);
+            document.removeEventListener('click', handleOutsideClick);
         };
 
-      }, [isPickerVisible]);
+    }, [isPickerVisible]);
 
 
     return (
@@ -184,7 +185,20 @@ const Inbox = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className="typing-area">
+                    <div className="emoji-container">
+                        <div className="emoji-container--inside" style={
+                            { display: 'inline' }
+                        }>
+                            {
+                                isPickerVisible ? <EmojiPicker theme="dark" /> : ''
+                            }
+                        </div>
+
+                    </div>
+
+
                     <div className="left-side-typing-area">
                         <img
                             className="attachements-icon"
@@ -198,24 +212,29 @@ const Inbox = () => {
                             aria-multiline={true}
                         />
                     </div>
-                    <div className="emoji-S">
-                        {
-                            !isPickerVisible ? 
-                        
-                        <img
-                            className="emoji-icon"
-                            src={assets.fluentEmoji16Regular}
-                            alt="Emoji Icon"
-                        />
-                        :
-                        <EmojiPicker />
-                        }
+                    <div>
+                        <div className="emoji-S">
+
+                            <img
+                                className={`emoji-icon`}
+                                style={
+                                    isPickerVisible ? { color: 'red' } : {}
+                                }
+                                src={assets.fluentEmoji16Regular}
+                                alt="Emoji Icon"
+                            />
+
+                        </div>
                         <img
                             className="send-icon"
                             src={assets.materialSymbolsSend}
                             alt="Send Icon"
                         />
                     </div>
+
+
+
+
                 </div>
             </div>
         </div>
